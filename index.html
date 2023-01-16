@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <title>My Weather</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <section class="start">
+         <div class="wrapper__start">
+            <div class="week__days">Tuesday</div>
+            <div class="date">20 Jun 2022</div>
+            <div class="geo">Biarritz</div>
+         </div>
+         <div class="wrapper__general">
+            <div class="weather__tempeger">
+               <img src="icon/Sun.png" alt="sun">
+            </div>
+            <div class="temprege">29 <span>°C</span></div>
+            <div class="brightness">Sunny</div>
+         </div>
+      </section>
+      <section class="main">
+         <div class="weather__title">
+            <div class="weather__subtitle">
+               <div class="pricipition">PRECIPITATION</div>
+               <div class="humidity">HUMIDITY</div>
+               <div class="wind">WIND</div>
+            </div>
+            <div class="weather__sevises">
+               <div class="pricipition__sevises">0%</div>
+               <div class="humidity__sevises">42<span>%</span></div>
+               <div class="wind__sevises">3 km/h</div>
+            </div>
+         </div>
+         <div class="week__weather">
+            <div class="week__card">
+               <div class="week__img">
+                  <img src="icon/Sun.png" alt="sun">
+               </div>
+               <div class="week__day">Tue</div>
+               <div class="week__temprege">30<span>°C</span></div>
+            </div>
+
+            <div class="week__card">
+               <div class="week__img">
+                  <img src="icon/cloud-sun.png" alt="sun">
+               </div>
+               <div class="week__day">Fri</div>
+               <div class="week__temprege">30<span>°C</span></div>
+            </div>
+
+            <div class="week__card">
+               <div class="week__img">
+                  <img src="icon/cloud-rain.png" alt="sun">
+               </div>
+               <div class="week__day">Sat</div>
+               <div class="week__temprege">30<span>°C</span></div>
+            </div>
+
+            <div class="week__card">
+               <div class="week__img">
+                  <img src="icon/Sun.png" alt="sun">
+               </div>
+               <div class="week__day">Sun</div>
+               <div class="week__temprege">30<span>°C</span></div>
+            </div>
+         </div>
+         <div class="location">
+            <img src="icon/Location.png" alt="geo">
+            <p>Change Location</p>
+         </div>
+      </section>
+
+   </div>
+
+
+   <script type="module" src="app.js"></script>
+</body>
+
+</html>

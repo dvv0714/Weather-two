@@ -1,0 +1,171 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+.week__days,
+.date,
+.geo,
+.temprege,
+.brightness,
+.weather__subtitle,
+.weather__sevises {
+   color: #fff;
+}
+
+.wrapper {
+   display: flex;
+}
+
+.start {
+   width: 495px;
+   min-height: 660px;
+   padding: 48px 0 84px 32px;
+   background-image: url(./icon/Rectangle\ 2.png);
+   background-repeat: no-repeat;
+}
+.wrapper__start {
+   width: 40%;
+   margin-bottom: 200px;
+}
+
+.week__days {
+   font-size: 37px;
+   line-height: 45px;
+   font-weight: 700;
+}
+.date {
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 27px;
+   margin: 15px 0 20px 0;
+}
+
+.geo {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 24px;
+}
+.geo::before {
+   content: "";
+   background: url(./icon/Location.svg) 0 0 no-repeat;
+   padding: 12px 30px 0 0;
+}
+
+.geo_code {
+}
+
+.wrapper__general {
+   width: 40%;
+}
+.weather__tempeger {
+   margin-bottom: 20px;
+}
+.temprege {
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 61px;
+}
+.brightness {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 37px;
+   padding-left: 10px;
+}
+
+.slide-box {
+}
+
+.main {
+   width: 520px;
+   height: 620px;
+   margin-top: 20px;
+   padding: 50px 45px 55px 55px;
+   background: #222831;
+   border-radius: 25px;
+}
+
+.weather__title {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 80px;
+}
+.weather__subtitle {
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 34px;
+}
+.weather__sevises {
+   font-size: 28px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: right;
+}
+
+.week__weather {
+   display: flex;
+   justify-content: space-between;
+   background: #272e37;
+   box-shadow: 1px 2px 4px #222831;
+   border-radius: 10px;
+   margin-bottom: 100px;
+}
+
+.week__card {
+   width: 120px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+   padding: 15px 0 15px 0;
+   color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.week__img {
+   width: 30px;
+   height: 30px;
+}
+.week__img img {
+   display: block;
+   width: 100%;
+}
+
+.location {
+   display: flex;
+   background: linear-gradient(90.8deg, rgba(144, 217, 224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
+   border-radius: 10px;
+   padding: 5px 0 5px 0;
+   cursor: pointer;
+}
+
+.location p {
+   margin: 0 auto;
+   padding-top: 3px;
+   color: #fff;
+}
+
+.week__card::after {
+   content: "";
+   border-right: 1px solid #fff;
+   height: 100px;
+   position: absolute;
+   padding-right: 100px;
+}
+
+.week__card:last-child::after {
+   content: "";
+   border-right: none;
+}
+
+.week__card:hover::after {
+   content: "";
+   border-right: none;
+   background-color: rgba(103, 100, 100, 0.5);
+   border-radius: 10px;
+}
